@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grayBackground"
+    android:layout_height="match_parent"
+    tools:context=".Earn_activity">
+
+    <EditText
+        android:id="@+id/earn_entry"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:padding="8dp"
+        android:hint="Enter amount Earned"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/text_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the way of Earning ..."
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/earn_entry"/>
+    <Spinner
+        android:id="@+id/spinner_earn"
+        android:prompt="@string/bottom_sheet_behavior"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_op"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:dropDownSelector="@color/grayBackground"
+        android:elevation="10dp"
+        android:padding="8dp" />
+
+
+    <Button
+        android:id="@+id/add_button_earn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_earn"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="ADD"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="645dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu"/>
+
+</RelativeLayout>

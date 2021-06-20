@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    android:orientation="vertical"
+    tools:context=".View_Earn_Data">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_earn_data"
+        android:layout_width="363dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:elevation="8dp"
+        android:padding="10dp" />
+</LinearLayout>

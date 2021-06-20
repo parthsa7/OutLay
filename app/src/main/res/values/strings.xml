@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OutLay</string>
+
+    <string-array name="spinner_item">
+        <item>Food</item>
+        <item>Shopping</item>
+        <item>Rent</item>
+        <item>Outing</item>
+        <item>Groceries</item>
+        <item>Fun</item>
+        <item>Girlfriend</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinner_earn">
+        <item>Salary</item>
+        <item>Bonus</item>
+        <item>Interest</item>
+        <item>Profit</item>
+        <item>Relatives</item>
+        <item>Pocket Money</item>
+        <item>Others</item>
+    </string-array>
+</resources>

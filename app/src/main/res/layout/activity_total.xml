@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    tools:context=".TotalActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pie_chart_Earn"
+        android:layout_width="360dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/lightblack"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/pie_chart"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:elevation="8dp"
+                android:padding="10dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/view_food_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/Food" />
+
+                <TextView
+                    android:id="@+id/food_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                   android:layout_marginLeft="55dp"
+                    android:text="Salary"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+
+                <View
+                    android:id="@+id/view_rent_pie"
+                    android:layout_below="@+id/view_food_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Rent" />
+
+                <TextView
+                    android:id="@+id/rent_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/food_pie"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Pocket Money"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/view_groceries_pie"
+                    android:layout_below="@+id/view_rent_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Groceries" />
+
+                <TextView
+                    android:id="@+id/Groceries_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rent_pie"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="profit"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_outing_pie"
+                    android:layout_below="@+id/view_groceries_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Outing" />
+
+                <TextView
+                    android:id="@+id/outing_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Groceries_pie"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Interest"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_Fun_pie"
+                    android:layout_below="@+id/view_outing_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Fun" />
+
+                <TextView
+                    android:id="@+id/fun_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/outing_pie"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Bonus"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_gf_pie"
+                    android:layout_below="@+id/view_Fun_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Girlfriend" />
+
+                <TextView
+                    android:id="@+id/gf_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fun_pie"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Relatives"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_Shopping_pie"
+                    android:layout_below="@+id/view_gf_pie"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Shopping" />
+
+                <TextView
+                    android:id="@+id/shopping_pie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gf_pie"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Others"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pie_chart_spend"
+        android:layout_below="@+id/pie_chart_Earn"
+        android:layout_width="360dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/lightblack"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/pie_spend_chart"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:elevation="8dp"
+                android:padding="10dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/view_food_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/Food" />
+
+                <TextView
+                    android:id="@+id/food_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Food"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_Shopping_pi"
+                    android:layout_below="@+id/view_food_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Shopping" />
+
+                <TextView
+                    android:id="@+id/shopping_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/food_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Shopping"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_rent_pi"
+                    android:layout_below="@+id/view_Shopping_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Rent" />
+
+                <TextView
+                    android:id="@+id/rent_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shopping_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Rent"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_groceries_pi"
+                    android:layout_below="@+id/view_rent_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Groceries" />
+
+                <TextView
+                    android:id="@+id/Groceries_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rent_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Groceries"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_outing_pi"
+                    android:layout_below="@+id/view_groceries_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Outing" />
+
+                <TextView
+                    android:id="@+id/outing_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Groceries_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Outing"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_Fun_pi"
+                    android:layout_below="@+id/view_outing_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Fun" />
+
+                <TextView
+                    android:id="@+id/fun_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/outing_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Fun"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view_gf_pi"
+                    android:layout_below="@+id/view_Fun_pi"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/Girlfriend" />
+
+                <TextView
+                    android:id="@+id/gf_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fun_pi"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="55dp"
+                    android:text="Girlfriend"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="645dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "633656187534",
+    "project_id": "outla-d68f6",
+    "storage_bucket": "outla-d68f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633656187534:android:ffd3e2024cc166f97ec7df",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633656187534-f3t61q5hh5hsbdh40ck55bj90llkd9mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCgiXR8TjjnoU0dFnGCjkmfaVolkA924o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633656187534-f3t61q5hh5hsbdh40ck55bj90llkd9mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

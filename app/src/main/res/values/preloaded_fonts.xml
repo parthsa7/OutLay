@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sc_bold_italic</item>
+        <item>@font/almendra_sc</item>
+        <item>@font/averia_gruesa_libre</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/cardo_bold</item>
+    </array>
+</resources>

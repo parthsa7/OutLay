@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practice">
+        <activity android:name=".TotalActivity"></activity>
+        <activity android:name=".View_Spend_Data" />
+        <activity
+            android:name=".View_Earn_Data"
+            android:label="Earned List" />
+        <activity android:name=".Forgotpass" />
+        <activity
+            android:name=".Login"
+            android:label="LogIn" />
+        <activity android:name=".Splashactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register_page"
+            android:label="Register" />
+        <activity
+            android:name=".Earn_activity"
+            android:label="Earn" />
+        <activity
+            android:name=".Spend_Activity"
+            android:label="Spend" />
+        <activity
+            android:name=".MainActivity"
+            android:label="OutLay">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
